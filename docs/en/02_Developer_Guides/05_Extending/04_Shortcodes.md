@@ -222,7 +222,7 @@ public function MyCustomShortCode($arguments, $content = null, $parser = null, $
 
 ```
 [my_shortcode]
-$attributes     => [];
+$arguments     => [];
 $content         => null;
 $parser         => ShortcodeParser instance,
 $tagName         => 'my_shortcode')
@@ -230,7 +230,7 @@ $tagName         => 'my_shortcode')
 
 ```
 [my_shortcode,attribute="foo",other="bar"]
-$attributes      => ['attribute'  => 'foo', 'other'      => 'bar']
+$arguments      => ['attribute'  => 'foo', 'other'      => 'bar']
 $enclosedContent => null
 $parser          => ShortcodeParser instance
 $tagName         => 'my_shortcode'
@@ -238,7 +238,7 @@ $tagName         => 'my_shortcode'
 
 ```
 [my_shortcode,attribute="foo"]content[/my_shortcode]
-$attributes      => ['attribute' => 'foo']
+$arguments      => ['attribute' => 'foo']
 $enclosedContent => 'content'
 $parser          => ShortcodeParser instance
 $tagName         => 'my_shortcode'
